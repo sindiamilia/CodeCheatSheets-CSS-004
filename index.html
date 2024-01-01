@@ -1,1 +1,37 @@
-<center><h1>Test
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS</title>
+        <style>
+            /* slide any element down */
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .pad10 {
+                padding: 10px;
+            }
+            .slideDown {
+                animation-name: slideDown;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes slideDown {
+                0% {
+                    transform: translateY(-100%);
+                    visibility: visible;
+                }
+                100% {
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="slideDown">
+            <div class="pad10">
+                Basic HTML Structure
+            </div>
+        </div>
+    </body>
+</html>
